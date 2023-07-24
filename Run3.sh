@@ -13,3 +13,4 @@ sudo qemu-system-x86_64 \
   -smp cores=2 \
   -device rtl8139,netdev=n0 -netdev user,id=n0 \
   -accel tcg,thread=multi \
+  -vga vmware
