@@ -3,8 +3,8 @@ sudo qemu-system-x86_64 \
   -m 8G \
   -cpu EPYC \
   -boot order=d \
+  -drive file=Tiny10.qcow2,format=raw \
   -drive file=Tiny10.iso,media=cdrom \
-  -drive file=Tiny10.img,format=raw \
   -drive file=RTL8139F.iso,media=cdrom \
   -device usb-ehci,id=usb,bus=pci.0,addr=0x4 \
   -device usb-tablet \
